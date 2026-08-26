@@ -3,6 +3,11 @@ layout: post
 title: "AIがコードを書く時代に、なぜ「お気に入りの言語」を持つのか"
 date: 2026-08-27
 description: "生成AIによって言語の学習コストが下がる一方、型・テスト・ツールチェーンによる検証可能性はむしろ重要になる。AI時代のプログラミング言語選択を、認知作業の外部化と答え責任から考える。"
+image:
+  path: /assets/images/og-ai-era-programming-language-choice.png
+  width: 1200
+  height: 630
+  alt: 暗い足場に、生成されたコードの流れと検証の基準線が通っている。言語とツールチェーンがAIの出力を支える、という本稿のイメージ。
 tags:
   - AI駆動開発
   - プログラミング言語

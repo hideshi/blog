@@ -6,6 +6,9 @@ url: "https://hideshi.github.io"
 baseurl: "/blog"
 remote_theme: pages-themes/minimal@v0.2.0
 github_username: hideshi
+twitter:
+  username: hdsh0428
+  card: summary_large_image
 twitter_username: hdsh0428
 show_excerpts: true
 show_downloads: false

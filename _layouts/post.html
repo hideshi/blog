@@ -6,6 +6,18 @@ layout: default
   <p>
     <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y年%-m月%-d日" }}</time>
   </p>
+  {% if page.image %}
+    {% if page.image.path %}
+      {% assign hero_src = page.image.path %}
+      {% assign hero_alt = page.image.alt | default: page.title %}
+    {% else %}
+      {% assign hero_src = page.image %}
+      {% assign hero_alt = page.image_alt | default: page.title %}
+    {% endif %}
+    <p>
+      <img src="{{ hero_src | relative_url }}" alt="{{ hero_alt }}" width="1200" height="630">
+    </p>
+  {% endif %}
   {{ content }}
 </article>
 <p><a href="{{ "/" | relative_url }}">記事一覧へ</a></p>
