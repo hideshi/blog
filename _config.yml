@@ -1,0 +1,22 @@
+title: 小越 秀のブログ
+description: AI駆動開発、ソフトウェア設計、認知作業の外部化について、実務と研究の接点から考えます。
+lang: ja
+timezone: Asia/Tokyo
+url: "https://hideshi.github.io"
+baseurl: "/blog"
+theme: minima
+author: 小越 秀
+github_username: hideshi
+twitter_username: hdsh0428
+show_excerpts: true
+permalink: /:year/:month/:day/:title/
+header_pages:
+  - about.md
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - drafts
+  - README.md
