@@ -225,6 +225,11 @@ hr {
   color: #ddd8cf;
 }
 
+article img {
+  max-width: 100%;
+  height: auto;
+}
+
 @media print, screen and (max-width: 960px) {
   section {
     border-color: #3f3b34;
