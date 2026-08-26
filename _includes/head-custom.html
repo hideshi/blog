@@ -1,0 +1,9 @@
+{% if page.image %}
+  {% if page.image.path %}
+    {% assign og_image_src = page.image.path %}
+  {% else %}
+    {% assign og_image_src = page.image %}
+  {% endif %}
+  <meta name="twitter:image" content="{{ og_image_src | absolute_url }}">
+  <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+{% endif %}

@@ -7,7 +7,7 @@ image:
   path: /assets/images/og-ai-era-programming-language-choice.png
   width: 1200
   height: 630
-  alt: 暗い足場に、生成されたコードの流れと検証の基準線が通っている。言語とツールチェーンがAIの出力を支える、という本稿のイメージ。
+  alt: 水色の枠にぴったり収まる1枚と、枠の外にずれた原稿。お気に入りの言語が、生成されたコードを測る基準になるという本稿のイメージ。
 tags:
   - AI駆動開発
   - プログラミング言語

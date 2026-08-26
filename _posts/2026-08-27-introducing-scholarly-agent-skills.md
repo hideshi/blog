@@ -7,7 +7,7 @@ image:
   path: /assets/images/og-introducing-scholarly-agent-skills.png
   width: 1200
   height: 630
-  alt: 木の足場が品質ゲートの列になり、原稿がその点検を通り抜けていく。AIの文章生成を、検証可能な研究工程として支えるという本稿のイメージ。
+  alt: 水色の枠が品質ゲートの列になり、原稿がその点検を通り抜けていく。AIの文章生成を、検証可能な研究工程として支えるという本稿のイメージ。
 tags:
   - AI
   - 論文執筆
