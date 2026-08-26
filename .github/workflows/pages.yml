@@ -13,7 +13,7 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -21,6 +21,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Skip stale commits
+        run: |
+          git fetch origin main
+          latest=$(git rev-parse origin/main)
+          echo "this=${GITHUB_SHA}"
+          echo "origin/main=${latest}"
+          test "${GITHUB_SHA}" = "${latest}"
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
