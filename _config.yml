@@ -6,10 +6,18 @@ url: "https://hideshi.github.io"
 baseurl: "/blog"
 remote_theme: pages-themes/minimal@v0.2.0
 github_username: hideshi
+author:
+  name: 認知の足場
+  twitter: hdsh0428
 twitter:
   username: hdsh0428
   card: summary_large_image
 twitter_username: hdsh0428
+social:
+  name: 認知の足場
+  links:
+    - https://x.com/hdsh0428
+    - https://github.com/hideshi
 google_analytics: G-XGZHPJQTVN
 show_excerpts: true
 show_downloads: false
@@ -18,6 +26,7 @@ permalink: /:year/:month/:day/:title/
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
   - jekyll-remote-theme
 
 exclude:

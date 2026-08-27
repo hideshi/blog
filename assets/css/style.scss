@@ -52,7 +52,15 @@ a:hover small {
   color: #a39e94;
 }
 
-header h1 a {
+header h1 a,
+header .site-title a {
+  color: #f3efe6;
+}
+
+header .site-title {
+  font-size: 28px;
+  line-height: 1.1;
+  margin: 0 0 20px;
   color: #f3efe6;
 }
 

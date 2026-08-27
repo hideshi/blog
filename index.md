@@ -1,6 +1,6 @@
 ---
 layout: home
-title: 記事
+title: 認知の足場
 list_title: 新着記事
 ---
 

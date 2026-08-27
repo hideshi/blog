@@ -20,4 +20,13 @@ layout: default
   {% endif %}
   {{ content }}
 </article>
+{% assign related = site.posts | where_exp: "p", "p.url != page.url" %}
+{% if related.size > 0 %}
+<h2>同じ軸の記事</h2>
+<ul>
+  {% for post in related limit: 5 %}
+    <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+{% endif %}
 <p><a href="{{ "/" | relative_url }}">記事一覧へ</a></p>
