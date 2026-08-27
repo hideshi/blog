@@ -59,18 +59,18 @@ title はずらしが一文で見える形（なぜ〜か、〜する前に、�
 | `_posts/` | 公開記事。Jekyll が拾う |
 | `drafts/` | 非公開。`_config.yml` の exclude 済み |
 | `_layouts/` | `home` / `page` / `post`（theme の `default` を包む） |
-| `_layouts/default.html` | `{% seo %}` の直後に `{% feed_meta %}`。記事・about のサイト名は `h1` にしない |
+| `_layouts/default.html` | `{% seo %}` → `{% feed_meta %}` → `head-twitter.html`。`name="twitter:image"` は SEO の `property` より後。記事・about のサイト名は `h1` にしない |
 | `_layouts/post.html` | 本文のあと「同じ軸の記事」（自記事以外、最大5件） |
 | `assets/css/style.scss` | Minimal の上に暗い配色 |
 | `assets/images/` | 公開 OGP。ファイル名は記事 slug |
-| `_includes/head-twitter.html` | `name="twitter:image"`（jekyll-seo-tag の `property` 不足を補う） |
+| `_includes/head-twitter.html` | `name="twitter:card"` と `name="twitter:image"`。画像 URL にクエリを付けない |
 | `_includes/head-custom.html` | GA4 gtag |
 | `robots.txt` | クローラ許可と `Sitemap:` |
 
 ## 公開フロー
 
 1. `drafts/YYYY-MM-DD-slug.md` で書く。front matter に `draft: true` を付けてよい。
-2. 公開前に OGP（1200×630）を作り、`assets/images/og-<slug>.png` へ置く。
+2. 公開前に OGP（1200×630 の JPEG、目安 100KB 以下）を作り、`assets/images/og-<slug>.jpg` へ置く。`image.path` も `.jpg`。
 3. `_posts/` へ移し、`draft: true` を外す。`image:` を付ける。関連記事リストは `post.html` が出すので、本文末に同じ一覧を重複させない。本文中の接続は残してよい。
 4. ユーザー承認後に commit。Pages 反映は push 後。
 5. X 文面を出す（下記「X 投稿」）。初回は正規 URL（末尾 `/`、クエリなし）。カードが古い／欠けたあとの**新しい共有**だけ `?v=2`。投稿済みポストのカードは更新されない。
@@ -90,9 +90,12 @@ title はずらしが一文で見える形（なぜ〜か、〜する前に、�
 
 - 280 字以内（CJK は2、URL は t.co で23）
 - ハッシュタグは付けない（カードと本文が重複しやすい）
-- 初回の URL に `?v=` を付けない。下書きプレビューの灰色箱は、投稿後も画像が無いことの証明にしない
-- `twitter:image` にビルド SHA などのクエリを付けない（X が画像取得に失敗することがある）。カードの再取得は**ページ URL** の `?v=2`
-- 画像なしで一度出してしまった投稿は、削除してから `...?v=2` で出し直す。同じ URL の再投稿ではカードは変わらない
+- 初回の URL は `https://hideshi.github.io/blog/YYYY/MM/DD/slug/`（末尾 `/`、`?v=` なし）
+- 下書きの灰色箱だけでは失敗と決めない。title/description だけ出て新聞アイコンのまま投稿したら、カードは画像なしで固定される
+- `twitter:image` にビルド SHA などのクエリを付けない。jekyll-seo-tag は `property="twitter:image"` を出すので、`head-twitter.html` は `{% seo %}` の**後**に置く
+- カードの再取得は**ページ URL** の `?v=2`。画像 URL 側にクエリを足さない
+- 画像なしで一度出してしまった投稿は、Pages で新 JPEG が 200 になってから削除し、`...?v=2` で出し直す。同じ URL の再投稿ではカードは変わらない
+- 2026-08-27 増幅器記事: SHA 付き `twitter:image` と 700KB PNG で画像だけ欠けた。クエリを外し JPEG（約 60KB）にして `?v=2` で出し直すと出た
 
 ## 記事 front matter
 
@@ -105,7 +108,7 @@ title: "..."
 date: YYYY-MM-DD
 description: "120字前後。検索と X 用。"
 image:
-  path: /assets/images/og-<slug>.png
+  path: /assets/images/og-<slug>.jpg
   width: 1200
   height: 630
   alt: 図が何を表すかを一文で。
@@ -145,6 +148,7 @@ GenerateImage の `description` には、画風指定に加えて **title と de
 - 左に「認知の足場」＋タイトル（Noto Sans CJK）。右に比喩
 - 比喩は一目で読めること（ゲートを通る原稿、枠に収まる1枚 など）
 - 書き出しサイズ **1200×630**。`article img { height: auto }` があるので HTML の `height="630"` を固定表示にしない
+- 公開ファイルは **JPEG**（品質 85 前後、目安 100KB 以下）。X は 700KB 級 PNG だと画像だけ欠けることがある。合成の PNG は `alts/` に残してよい
 
 タイトル重ねは `python3 scripts/compose_og.py`。使い方は [og-compose.md](og-compose.md)。
 

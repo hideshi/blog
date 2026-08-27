@@ -12,10 +12,16 @@ python3 scripts/compose_og.py <src.png> \
   --subtitle "任意の副題"
 ```
 
-`-o` を省略すると `assets/images/alts/<srcのstem>.png` に書く。採用したら公開パスへコピーする。
+`-o` を省略すると `assets/images/alts/<srcのstem>.png` に書く。採用したら JPEG にして公開パスへ置く（X カード用。PNG のまま 700KB 級だと画像だけ欠けることがある）。
 
 ```bash
-cp assets/images/alts/og-<slug>.png assets/images/og-<slug>.png
+python3 - <<'PY'
+from pathlib import Path
+from PIL import Image
+src = Path("assets/images/alts/og-<slug>.png")
+im = Image.open(src).convert("RGB")
+im.save("assets/images/og-<slug>.jpg", "JPEG", quality=85, optimize=True)
+PY
 ```
 
-alts はコミットしない。フォントは `/usr/share/fonts/opentype/noto/NotoSansCJK-*.ttc`（`index=0`）。Pillow が必要（`python3 -c "import PIL"`）。
+front matter の `image.path` は `/assets/images/og-<slug>.jpg`。alts はコミットしない。フォントは `/usr/share/fonts/opentype/noto/NotoSansCJK-*.ttc`（`index=0`）。Pillow が必要（`python3 -c "import PIL"`）。
