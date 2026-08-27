@@ -1,0 +1,23 @@
+{% if page.image %}
+  {% if page.image.path %}
+    {% assign og_image_src = page.image.path %}
+    {% assign og_image_alt = page.image.alt | default: page.title %}
+  {% else %}
+    {% assign og_image_src = page.image %}
+    {% assign og_image_alt = page.image_alt | default: page.title %}
+  {% endif %}
+  {% assign og_image_abs = og_image_src | absolute_url %}
+  {% if site.github.build_revision %}
+    {% assign og_image_abs = og_image_abs | append: "?v=" | append: site.github.build_revision %}
+  {% endif %}
+  <meta name="twitter:card" content="summary_large_image">
+  {% if site.twitter.username %}
+  <meta name="twitter:site" content="@{{ site.twitter.username }}">
+  {% endif %}
+  <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+  {% if page.description %}
+  <meta name="twitter:description" content="{{ page.description | xml_escape }}">
+  {% endif %}
+  <meta name="twitter:image" content="{{ og_image_abs }}">
+  <meta name="twitter:image:alt" content="{{ og_image_alt | xml_escape }}">
+{% endif %}
