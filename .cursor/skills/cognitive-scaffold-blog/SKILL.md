@@ -88,6 +88,10 @@ tags:
 
 ## OGP 画像
 
+生成前に、対象記事の front matter から **`title` と `description` を Read** する。slug・会話の要約・本文だけを入力にして図を起こさない。
+
+GenerateImage の `description` には、画風指定に加えて **title と description を原文のまま含める**。右の比喩は、その2つを読んだ人にも通じるものにする。本文は補助（表のセルや固有の挿話を主モチーフにしない）。重ねる日本語は `title`（必要なら `description` 由来の subtitle）。
+
 読める図にする。3D の木・真鍮・発光ケーブルは使わない（AI っぽく、比喩が読めない）。
 
 採用した画風:

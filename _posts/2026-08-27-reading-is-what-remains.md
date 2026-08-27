@@ -7,7 +7,7 @@ image:
   path: /assets/images/og-reading-is-what-remains.png
   width: 1200
   height: 630
-  alt: 変換候補のような短冊の列から1枚が水色枠で選ばれ、その上に大きな原稿がある図。読んで選ぶ、という本稿の比喩。
+  alt: 生成り色の原稿がいくつかあり、1枚だけが水色枠で選ばれている。読んで採否する、という本稿のイメージ。
 tags:
   - AI駆動開発
   - 答え責任
