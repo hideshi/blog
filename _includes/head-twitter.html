@@ -7,9 +7,6 @@
     {% assign og_image_alt = page.image_alt | default: page.title %}
   {% endif %}
   {% assign og_image_abs = og_image_src | absolute_url %}
-  {% if site.github.build_revision %}
-    {% assign og_image_abs = og_image_abs | append: "?v=" | append: site.github.build_revision %}
-  {% endif %}
   <meta name="twitter:card" content="summary_large_image">
   {% if site.twitter.username %}
   <meta name="twitter:site" content="@{{ site.twitter.username }}">

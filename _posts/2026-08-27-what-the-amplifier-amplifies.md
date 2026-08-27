@@ -4,7 +4,7 @@ title: "AIを「増幅器」と呼ぶ前に、何を増幅するかを見る"
 date: 2026-08-27
 description: "AI活用で増幅器は、人間の能力を伸ばす肯定語として使われやすい。同じ装置は、読めて検証して採否できるときは足場の隣にあり、それが無いときは誤りの増幅器になる。問題は増幅そのものではなく、入力の質である。"
 image:
-  path: /assets/images/og-what-the-amplifier-amplifies.png
+  path: /assets/images/og-what-the-amplifier-amplifies.jpg
   width: 1200
   height: 630
   alt: 小さな原稿が水色の枠を通り、大きな原稿になる図。増幅器は入力を大きくする装置であり、何を入れるかが残る、という本稿のイメージ。
