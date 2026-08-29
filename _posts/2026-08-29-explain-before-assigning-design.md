@@ -4,7 +4,7 @@ title: "ジュニアに設計を任せる前に、自分で説明できるかを
 date: 2026-08-29
 description: "AIでコードがすぐ出るようになると、若手にも早く設計を任せたくなる。それは成長が早まったことではなく、慣れる前に任されていることがある。任せてよいのは、出てきた案を自分で説明できるときである。"
 image:
-  path: /assets/images/og-architect-seat-before-judgment.jpg
+  path: /assets/images/og-explain-before-assigning-design.jpg
   width: 1200
   height: 630
   alt: 水色の枠の中に人と原稿があり、枠の外に空の大きな椅子がある。任される担当は先にあり、説明はまだ枠の中にある、という本稿のイメージ。

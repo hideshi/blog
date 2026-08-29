@@ -100,6 +100,7 @@ title はずらしが一文で見える形（なぜ〜か、〜する前に、�
 | `_includes/head-twitter.html` | `name="twitter:card"` と `name="twitter:image"`。画像 URL にクエリを付けない |
 | `_includes/head-custom.html` | GA4 gtag |
 | `robots.txt` | クローラ許可と `Sitemap:` |
+| `redirects/` | 旧記事 URL の転送（layout: null + permalink）。X カード更新のために slug を変えたとき |
 
 ## 公開フロー
 
@@ -139,7 +140,7 @@ https://hideshi.github.io/blog/2026/08/27/document-format-and-who-can-answer/
 記事を書きました。
 AIでコードがすぐ出るようになると、若手にも早く設計を任せたくなる。それは成長が早まったことではなく、慣れる前に任されていることがあると思う。任せてよいのは、出てきた案を自分で説明できるときである。
 
-https://hideshi.github.io/blog/2026/08/29/architect-seat-before-judgment/
+https://hideshi.github.io/blog/2026/08/29/explain-before-assigning-design/
 ```
 
 - 280 字以内（CJK は2、URL は t.co で23）
@@ -149,6 +150,8 @@ https://hideshi.github.io/blog/2026/08/29/architect-seat-before-judgment/
 - `twitter:image` にビルド SHA などのクエリを付けない。jekyll-seo-tag は `property="twitter:image"` を出すので、`head-twitter.html` は `{% seo %}` の**後**に置く
 - カードの再取得は**ページ URL** の `?v=2`。画像 URL 側にクエリを足さない
 - 画像なしで一度出してしまった投稿は、Pages で新 JPEG が 200 になってから削除し、`...?v=2` で出し直す。同じ URL の再投稿ではカードは変わらない
+- `?v=2` でも絵が古いときは、ページ URL と `twitter:image` の両方がキャッシュされている。記事ファイル名（slug）と `og-<slug>.jpg` を揃えて変える。旧 URL は `redirects/` で新 slug へ送る。投稿済みポストは新 URL で出し直す
+- 2026-08-29 設計を任せる記事: 画像を差し替えても旧 slug のカードが残った。`architect-seat-before-judgment` を `explain-before-assigning-design` に変え、OGP ファイル名も揃えた
 - 2026-08-27 増幅器記事: SHA 付き `twitter:image` と 700KB PNG で画像だけ欠けた。クエリを外し JPEG（約 60KB）にして `?v=2` で出し直すと出た
 - X モバイルのカードは、OGP 画像の下端に半透明バーでページタイトルを重ねる。比喩やアイコンを下端に置くと隠れる（「OGP 画像」の安全域）
 
