@@ -1,0 +1,103 @@
+version: 1
+article: _posts/2026-09-04-why-primary-sources-are-not-enough-for-llms.md
+sources:
+  - id: openai-2026-gpt-6-astra
+    type: web-article
+    title: "GPT-6 Astra: A new generation of intelligence"
+    author: "OpenAI"
+    canonical_url: "https://openai.com/index/gpt-6-astra/"
+    published_at: "2026-09-03"
+    retrieved_at: "2026-09-04"
+    license: "unknown"
+    notes: "OpenAI による GPT-6 Astra 公式発表。ARC-AGI-3 で 99.9% 記録などのベンチマーク結果を公表（Responses API利用・任意effortでの評価等の注記あり）。"
+
+  - id: google-deepmind-2026-gemini-3-8-flash
+    type: documentation
+    title: "Gemini 3.8 Flash - Model Card"
+    author: "Google DeepMind"
+    canonical_url: "https://deepmind.google/models/model-cards/gemini-3-8-flash/"
+    published_at: "2026-09-02"
+    retrieved_at: "2026-09-04"
+    license: "unknown"
+    notes: "Google DeepMind による公式モデルカード。知識カットオフ（2026年3月、一部2025年1月）およびハルシネーション制約を明記。"
+
+  - id: nikeghbal-2026-who-flips
+    type: academic-paper
+    title: "Who Flips? Self- and Cross-Model Counterarguments Reveal Answer Instability in LLMs"
+    author: "Nafiseh Nikeghbal, Amir Hossein Kargaran, Shaghayegh Kolli, Jana Diesner"
+    canonical_url: "https://arxiv.org/abs/2606.16011"
+    published_at: "2026-06-14"
+    updated_at: "2026-08-30"
+    retrieved_at: "2026-09-04"
+    license: "arXiv.org perpetual non-exclusive license"
+    notes: "EMNLP 2026 Findings 採択論文。反論による回答反転率（17.5%〜97.3%）と自己帰属による反転増（平均7.1ポイント）を報告。"
+
+  - id: parikh-2026-tag-questions
+    type: preprint
+    title: "Tag Questions and the Generational Reversal of Sycophancy Across 45 Language Models"
+    author: "Tapan Parikh"
+    canonical_url: "https://arxiv.org/abs/2607.23976"
+    published_at: "2026-07-27"
+    retrieved_at: "2026-09-04"
+    license: "arXiv.org perpetual non-exclusive license"
+    notes: "45モデルを対象に、付加疑問文（right? vs maybe?）による迎合の世代間反転と表現依存性を報告。"
+
+  - id: khurana-2026-authoritybench
+    type: academic-paper
+    title: "Authority, Truth, and Citation Bias: A Large-Scale Multi-Domain Benchmark for Studying Epistemic Susceptibility in Large Language Models"
+    author: "Aryan Khurana, Aravind Ramana RN, Dhruv Kumar"
+    canonical_url: "https://arxiv.org/abs/2606.13104"
+    published_at: "2026-06-11"
+    retrieved_at: "2026-09-04"
+    license: "arXiv.org perpetual non-exclusive license"
+    notes: "ICML 2026 ワークショップ採択。引用の付与自体がハルシネーションを増大させ、架空引用で3〜22ポイント増加することを報告。"
+
+  - id: li-2026-balancing-knowledge
+    type: academic-paper
+    title: "How Large Language Models Balance Internal Knowledge with User and Document Assertions"
+    author: "Shuowei Li, Haoxin Li, Wenda Chu, Yi Fang"
+    canonical_url: "https://arxiv.org/abs/2604.22193"
+    published_at: "2026-04-24"
+    retrieved_at: "2026-09-04"
+    license: "arXiv.org perpetual non-exclusive license"
+    notes: "ACL 2026 Findings 採択論文。内部知識・ユーザー主張・文書主張の競合における優先順位と有害情報の識別困難を報告。"
+
+  - id: liu-2026-agenthallu
+    type: preprint
+    title: "AgentHallu: Benchmarking Automated Hallucination Attribution of LLM-based Agents"
+    author: "Xuannan Liu, Xiao Yang, Zekun Li, Peipei Li, Ran He"
+    canonical_url: "https://arxiv.org/abs/2601.06818"
+    published_at: "2026-01-11"
+    retrieved_at: "2026-09-04"
+    license: "arXiv.org perpetual non-exclusive license"
+    notes: "エージェントの実行軌跡における原因ステップ特定精度が最良のGemini 2.5 Proでも41.1%、ツール利用時プロプライエタリモデル平均11.6%に留まることを報告。"
+
+  - id: khajavi-2026-citecheck
+    type: preprint
+    title: "CiteCheck: Retrieval-Grounded Detection of LLM Citation Hallucinations in Scientific Text"
+    author: "Khashayar Khajavi, Shaghayegh Sadeghi, Rise Adhikari, Alexander Tessier"
+    canonical_url: "https://arxiv.org/abs/2605.27700"
+    published_at: "2026-05-26"
+    retrieved_at: "2026-09-04"
+    license: "arXiv.org perpetual non-exclusive license"
+    notes: "検索照合と構造化LLM検証器により、物理学引用ベンチマークで88.9%の正確度を達成した引用検証手法。"
+
+  - id: li-2026-march
+    type: preprint
+    title: "MARCH: Multi-Agent Reinforced Self-Check for LLM Hallucination"
+    author: "Zhuo Li, Yupeng Zhang, Pengyu Cheng, Jiajun Song, Mengyu Zhou, Hao Li, Shujie Hu, Yu Qin, Erchao Zhao, Xiaoxi Jiang, Guanjun Jiang"
+    canonical_url: "https://arxiv.org/abs/2603.24579"
+    published_at: "2026-03-25"
+    retrieved_at: "2026-09-04"
+    license: "arXiv.org perpetual non-exclusive license"
+    notes: "Solver, Proposer, Checker を分離し、Checker に元の回答を見せないことで確証バイアスを減らす自己点検構成。"
+
+  - id: jin-2026-harness-engineering
+    type: preprint
+    title: "Harness Engineering in LLM Tool Use via Agent-Native Reusable Tool Primitives"
+    author: "Haibo Jin, Suijin Wang, Xucheng Yu, Haojing Luo, Haohan Wang"
+    canonical_url: "https://arxiv.org/abs/2609.01736"
+    published_at: "2026-09-01"
+    retrieved_at: "2026-09-04"
+    license: "arXiv.org perpetual non-exclusive license"
+    notes: "Planner, Router, Verifier を備えた HEART 構成により複雑なツールタスク完遂率を改善した報告。"

@@ -1,0 +1,69 @@
+version: 1
+article: _posts/2026-08-27-ai-era-programming-language-choice.md
+sources:
+  - id: balahan-seroter-2026-why-go
+    type: web-article
+    title: "Why Go is an Ideal Language for AI-Assisted Software Engineering"
+    author: "Cameron Balahan, Richard Seroter"
+    canonical_url: "https://developers.googleblog.com/why-go-is-an-ideal-language-for-ai-assisted-software-engineering/"
+    published_at: "2026-08-11"
+    retrieved_at: "2026-09-04"
+    license: "unknown"
+    notes: "Google Developers Blog の記事。AI支援開発における Go の言語特性、ツールチェーン、レビュー重視への移行を論じる。"
+
+  - id: go-command-documentation
+    type: documentation
+    title: "About the go command"
+    author: "The Go Authors"
+    canonical_url: "https://go.dev/doc/cmd"
+    retrieved_at: "2026-09-04"
+    license: "unknown"
+    notes: "Go 公式ドキュメント。go build, go test, go vet などのツールチェーンを案内する。"
+
+  - id: go-tutorial-add-a-test
+    type: documentation
+    title: "Tutorial: Add a test"
+    author: "The Go Authors"
+    canonical_url: "https://go.dev/doc/tutorial/add-a-test"
+    retrieved_at: "2026-09-04"
+    license: "unknown"
+    notes: "Go 公式チュートリアル。go test によるテストの作成と実行手順。"
+
+  - id: go-solutions-cloud
+    type: documentation
+    title: "Go for Cloud & Network Services"
+    author: "The Go Authors"
+    canonical_url: "https://go.dev/solutions/cloud"
+    retrieved_at: "2026-09-04"
+    license: "unknown"
+    notes: "Go 公式ソリューション紹介。主要クラウドプラットフォームでの Go サポート状況を案内する。"
+
+  - id: ogoshi-2026-cognitive-scaffolding
+    type: academic-paper
+    title: "AIによる認知スキャフォールディングとアイデア発散傾向の構造化:IT実務家における論文執筆の民主化と認知拡張メカニズム"
+    author: "小越 秀"
+    canonical_url: "https://doi.org/10.5281/zenodo.21987487"
+    published_at: "2026-08-18"
+    retrieved_at: "2026-09-04"
+    license: "CC BY 4.0"
+    notes: "Zenodo プレプリント。AI 協働における認知スキャフォールディングと役割分担を論じる。"
+
+  - id: ogoshi-2026-cognitive-pluralism
+    type: academic-paper
+    title: "地頭至上主義の系譜と認知資源の多元主義:規範と実践の矛盾の可視化"
+    author: "小越 秀"
+    canonical_url: "https://doi.org/10.5281/zenodo.22054034"
+    published_at: "2026-08-22"
+    retrieved_at: "2026-09-04"
+    license: "CC BY 4.0"
+    notes: "Zenodo プレプリント。認知資源の多元主義と外部化の正当性を論じる。"
+
+  - id: ogoshi-2026-answerability-boundary
+    type: academic-paper
+    title: "答え責任と外部化の線引き: AI 協働における認知作業の委譲原理"
+    author: "小越 秀"
+    canonical_url: "https://doi.org/10.5281/zenodo.22065716"
+    published_at: "2026-08-23"
+    retrieved_at: "2026-09-04"
+    license: "CC BY 4.0"
+    notes: "Zenodo プレプリント。人間が答え責任を保持できる外部化の委譲限界を論じる。"

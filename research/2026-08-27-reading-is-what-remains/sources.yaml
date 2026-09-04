@@ -1,0 +1,32 @@
+version: 1
+article: _posts/2026-08-27-reading-is-what-remains.md
+sources:
+  - id: ogoshi-2026-cognitive-scaffolding
+    type: academic-paper
+    title: "AIによる認知スキャフォールディングとアイデア発散傾向の構造化:IT実務家における論文執筆の民主化と認知拡張メカニズム"
+    author: "小越 秀"
+    canonical_url: "https://doi.org/10.5281/zenodo.21987487"
+    published_at: "2026-08-18"
+    retrieved_at: "2026-09-04"
+    license: "CC BY 4.0"
+    notes: "Zenodo プレプリント。AI 協働における認知スキャフォールディングと役割分担を論じる。"
+
+  - id: ogoshi-2026-cognitive-pluralism
+    type: academic-paper
+    title: "地頭至上主義の系譜と認知資源の多元主義:規範と実践の矛盾の可視化"
+    author: "小越 秀"
+    canonical_url: "https://doi.org/10.5281/zenodo.22054034"
+    published_at: "2026-08-22"
+    retrieved_at: "2026-09-04"
+    license: "CC BY 4.0"
+    notes: "Zenodo プレプリント。頭の中だけの処理と外部資源の利用に関する正当性基準を論じる。"
+
+  - id: ogoshi-2026-answerability-boundary
+    type: academic-paper
+    title: "答え責任と外部化の線引き: AI 協働における認知作業の委譲原理"
+    author: "小越 秀"
+    canonical_url: "https://doi.org/10.5281/zenodo.22065716"
+    published_at: "2026-08-23"
+    retrieved_at: "2026-09-04"
+    license: "CC BY 4.0"
+    notes: "Zenodo プレプリント。外部化の境界と誤り検出・訂正・採否の保持を論じる。"
