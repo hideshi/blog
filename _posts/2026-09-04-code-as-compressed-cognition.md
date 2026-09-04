@@ -4,7 +4,7 @@ title: "コードは思考の圧縮結果である——形式知の中に残る
 date: 2026-09-04
 description: "コードは形式知である。しかし文字として存在していても、設計判断やビジネスルールの文脈まで共有されたとは限らない。エンジニアの認知戦略を手がかりに、Whyの外部化と、AI時代における「足場」と答え責任を考える。"
 image:
-  path: /assets/images/og-code-as-compressed-cognition.png
+  path: /assets/images/og-code-as-compressed-cognition.jpg
   width: 1200
   height: 630
   alt: 炭色の紙の上で、頭部シルエット（思考）からコード原稿へ、さらに水色の足場枠を通って構造化された形式知の文書へと展開される3段階のプロセス図。思考の圧縮と形式知化を表す本稿のイメージ。
