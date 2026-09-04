@@ -1,3 +1,6 @@
 # OGP experiments. Adopted files live in assets/images/.
 assets/images/alts/
+
+# Local copies of source material may not be redistributable.
+research/**/snapshots/
 drafts/

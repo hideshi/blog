@@ -29,4 +29,5 @@ plugins:
 
 exclude:
   - drafts
+  - research
   - README.md

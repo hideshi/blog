@@ -1,0 +1,23 @@
+version: 1
+article: _posts/2026-09-04-code-as-compressed-cognition.md
+sources:
+  - id: torao-2026-cognitive-strategies
+    type: web-article
+    title: "ソフトウェアの「設計原則」を、なぜ一部のエンジニアは生理的に嫌うのか"
+    author: "Takami Torao"
+    canonical_url: "https://zenn.dev/torao/articles/20260502-differences-in-engrs-cognitive-strategies"
+    published_at: "2026-05-11"
+    updated_at: "2026-05-13"
+    retrieved_at: "2026-09-04"
+    license: "unknown"
+    notes: "Zenn の原記事。著者自身が実証済み理論ではなく、長年の観察に基づく認知モデルだと明記している。"
+
+  - id: evans-2015-ddd-reference
+    type: reference-booklet
+    title: "Domain-Driven Design Reference: Definitions and Pattern Summaries"
+    author: "Eric Evans"
+    canonical_url: "https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf"
+    published_at: "2015"
+    retrieved_at: "2026-09-04"
+    license: "CC BY 4.0"
+    notes: "Domain Language, Inc. が配布する 59 ページの参照冊子。"
