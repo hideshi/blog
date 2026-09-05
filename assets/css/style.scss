@@ -77,6 +77,9 @@ pre {
 pre {
   background: #221f1c;
   border-color: #3f3b34;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-x: auto;
 }
 
 th,
