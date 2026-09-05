@@ -45,3 +45,12 @@ sources:
     published_at: "2026-08-31"
     retrieved_at: "2026-09-05"
     license: "unknown"
+  - id: elyza-works-positioning-2026-05-11
+    type: official-press-release
+    title: "ELYZAがKDDIに提供し再販する法人向け生成AI活用ツール『ELYZA Works with KDDI』が初の動画広告を配信開始"
+    author: "株式会社ELYZA、KDDI株式会社"
+    canonical_url: "https://elyza.ai/news/2026/05/11/works_promotion_start"
+    published_at: "2026-05-11"
+    retrieved_at: "2026-09-05"
+    license: "unknown"
+    notes: "従来型エンタープライズシステムと、ELYZA Worksが対象とする現場の細かな非定型業務との位置づけを確認するために使用。"
