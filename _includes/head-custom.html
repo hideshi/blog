@@ -10,7 +10,21 @@
 
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-  mermaid.initialize({ startOnLoad: false, theme: 'default' });
+  mermaid.initialize({
+    startOnLoad: false,
+    theme: 'dark',
+    themeVariables: {
+      darkMode: true,
+      background: '#161513',
+      mainBkg: '#221f1c',
+      nodeBorder: '#3f3b34',
+      nodeTextColor: '#f3efe6',
+      lineColor: '#8ec4e0',
+      textColor: '#ddd8cf',
+      subGraphBkg: '#1c1a17',
+      subGraphBorder: '#3f3b34'
+    }
+  });
 
   document.addEventListener('DOMContentLoaded', async () => {
     const codeBlocks = document.querySelectorAll('pre code.language-mermaid');

@@ -369,8 +369,6 @@ flowchart TD
         TestOutputs --> LLMJudge
         LLMJudge --> Table["評価結果テーブル (sc47)"]
     end
-    
-    style test_loop fill:#f9f9f9,stroke:#5c6370,stroke-width:1px
 ```
 
 #### テスト設計元の結合による「共通原因故障」のリスク
