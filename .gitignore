@@ -4,3 +4,7 @@ assets/images/alts/
 # Local copies of source material may not be redistributable.
 research/**/snapshots/
 drafts/
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
