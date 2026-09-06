@@ -40,8 +40,9 @@ tags:
 2. front matter、見出し、コードフェンス、内部リンク、画像パスを検査する。
 3. 原典を使う記事は証拠パックを検査する。
 4. OGP を作成し、実寸と容量を確認する。
-5. `validate_post.py` を実行する。
-6. 保存後のファイルを読み直し、差分を示す。
+5. `drafts/` から `_posts/` へ移動した場合は、`draft: true` を外し、元の `drafts/` 下のファイルを削除する（重複・二重管理の防止）。
+6. `validate_post.py` を実行する。
+7. 保存後のファイルを読み直し、差分を示す。
 
 ```bash
 python3 .agents/skills/cognitive-scaffold-blog/scripts/validate_post.py _posts/YYYY-MM-DD-slug.md
