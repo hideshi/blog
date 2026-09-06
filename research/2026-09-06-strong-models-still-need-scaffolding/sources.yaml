@@ -1,0 +1,87 @@
+version: 1
+article: _posts/2026-09-06-strong-models-still-need-scaffolding.md
+sources:
+  - id: openai-gpt-6-astra-model-guidance
+    type: official-documentation
+    title: "Model guidance: Using GPT-6 Astra"
+    author: "OpenAI"
+    canonical_url: "https://developers.openai.com/api/docs/guides/latest-model"
+    retrieved_at: "2026-09-06"
+    license: "unknown"
+
+  - id: openai-gpt-5-6-sol-model
+    type: official-documentation
+    title: "GPT-5.6 Sol Model"
+    author: "OpenAI"
+    canonical_url: "https://developers.openai.com/api/docs/models/gpt-5.6-sol"
+    retrieved_at: "2026-09-06"
+    license: "unknown"
+
+  - id: openai-codex-customization
+    type: official-documentation
+    title: "カスタマイズ"
+    author: "OpenAI"
+    canonical_url: "https://learn.chatgpt.com/ja-JP/docs/customization/overview"
+    retrieved_at: "2026-09-06"
+    license: "unknown"
+
+  - id: cc-sdd-spec-driven-workflow
+    type: project-documentation
+    title: "Spec-Driven Development Workflow"
+    author: "gotalab"
+    canonical_url: "https://github.com/gotalab/cc-sdd/blob/main/docs/guides/spec-driven.md"
+    retrieved_at: "2026-09-06"
+    license: "unknown"
+
+  - id: cc-sdd-philosophy
+    type: project-documentation
+    title: "Why cc-sdd? A philosophy note"
+    author: "gotalab"
+    canonical_url: "https://github.com/gotalab/cc-sdd/blob/main/docs/guides/why-cc-sdd.md"
+    retrieved_at: "2026-09-06"
+    license: "unknown"
+
+  - id: cc-sdd-readme
+    type: project-documentation
+    title: "cc-sdd: Long-running spec-driven implementation for AI coding agents"
+    author: "gotalab"
+    canonical_url: "https://github.com/gotalab/cc-sdd/blob/main/README.md"
+    retrieved_at: "2026-09-06"
+    license: "MIT"
+
+  - id: kiro-feature-specs
+    type: official-documentation
+    title: "Feature Specs"
+    author: "Kiro"
+    canonical_url: "https://kiro.dev/docs/specs/feature-specs/"
+    updated_at: "2026-08-04"
+    retrieved_at: "2026-09-06"
+    license: "unknown"
+
+  - id: helloworld-knowledge-graph-2026
+    type: web-article
+    title: "トークン2000分の1——オントロジー×ナレッジグラフでClaude Codeの推測を消す"
+    author: "週末ものづくり部"
+    canonical_url: "https://zenn.dev/helloworld/articles/bcaea69f58eae5"
+    published_at: "2026-09-01"
+    retrieved_at: "2026-09-06"
+    license: "unknown"
+
+  - id: nadella-frontier-ecosystem-2026
+    type: social-post
+    title: "A frontier without an ecosystem is not stable"
+    author: "Satya Nadella"
+    canonical_url: "https://x.com/satyanadella/status/2066182223213293753"
+    published_at: "2026-06-14"
+    retrieved_at: "2026-09-06"
+    license: "unknown"
+    notes: "Xの正規URLは取得時にアクセス制限あり。投稿本文は同一投稿IDの転載と複数の報道で照合し、定義の詳細は本人が出演したPossibleの対談全文で確認した。"
+
+  - id: possible-nadella-token-capital-2026
+    type: interview-transcript
+    title: "Satya Nadella on making human and token capital compound"
+    author: "Possible"
+    canonical_url: "https://www.possible.fm/podcasts/satya-nadella-on-making-human-and-token-capital-compound/"
+    published_at: "2026-06-05"
+    retrieved_at: "2026-09-06"
+    license: "unknown"

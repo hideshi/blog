@@ -1,0 +1,108 @@
+version: 1
+article: drafts/2026-09-06-project-manager-reduces-uncertainty.md
+sources:
+  - id: it-boyaki-x-pm-2026
+    type: social-post
+    title: "「なぜ優秀なエンジニアほどPMになりたくないのか」へのコメントまとめ"
+    author: "IT技術屋のボヤキ"
+    canonical_url: "https://x.com/IT_BOYAKI/status/2095629733702828332"
+    published_at: "2026-09-03T21:47:18Z"
+    retrieved_at: "2026-09-06"
+    license: "unknown"
+    notes: "X正規URLは取得時にアクセス制限あり。同一投稿IDを返す公開埋め込みAPIで本文、投稿者、日時を確認した。動画へのコメントを投稿者が要約したものであり、調査結果としては扱わない。"
+
+  - id: anubis-x-pm-2026
+    type: social-post
+    title: "PMが技術職からの逃げ道になっていたという観察"
+    author: "Anubis"
+    canonical_url: "https://x.com/Anubis_369/status/2096047042540007902"
+    published_at: "2026-09-05T01:25:32Z"
+    retrieved_at: "2026-09-06"
+    license: "unknown"
+    notes: "X正規URLは取得時にアクセス制限あり。同一投稿IDを返す公開埋め込みAPIで本文、投稿者、日時、引用元投稿を確認した。著者自身が見たケースについての個人的観察。"
+
+  - id: it-boyaki-youtube-pm-2026
+    type: video
+    title: "なぜ優秀なエンジニアほどPMになりたくないのか"
+    author: "IT技術屋のボヤキ"
+    canonical_url: "https://www.youtube.com/watch?v=jsmTjR30uUw"
+    published_at: "2026-09-01"
+    retrieved_at: "2026-09-06"
+    license: "unknown"
+    notes: "YouTube oEmbedで題名と投稿者を確認し、日本語自動字幕で全編を確認。PMBOKの議論は05:13–06:51。自動字幕の誤認識を踏まえ、数値と概念はPMI公式資料で別途照合した。"
+
+  - id: oreilly-2017-pmbok-sixth
+    type: publisher-catalog
+    title: "A Guide to the Project Management Body of Knowledge (PMBOK Guide)—Sixth Edition"
+    author: "Project Management Institute"
+    canonical_url: "https://www.oreilly.com/library/view/a-guide-to/9781628251845/copyright.xhtml"
+    published_at: "2017-09"
+    retrieved_at: "2026-09-06"
+    license: "unknown"
+    notes: "PMI刊行の英語版第6版、ISBN 9781628251845。O'Reilly書誌は756ページと記載。"
+
+  - id: oreilly-2021-pmbok-seventh
+    type: publisher-catalog
+    title: "A Guide to the Project Management Body of Knowledge (PMBOK Guide)—Seventh Edition and The Standard for Project Management"
+    author: "Project Management Institute"
+    canonical_url: "https://www.oreilly.com/library/view/a-guide-to/9781628256642/"
+    published_at: "2021-07"
+    retrieved_at: "2026-09-06"
+    license: "unknown"
+    notes: "PMI刊行の英語版第7版、ISBN 9781628256642。O'Reilly書誌は370ページと記載。"
+
+  - id: pmi-2021-seven-facts
+    type: official-document
+    title: "The PMBOK Guide: Seven Facts About the Pending Seventh Edition"
+    author: "Project Management Institute"
+    canonical_url: "https://www.pmi.org/-/media/pmi/documents/public/pdf/pmbok-standards/pmbok-guide-seven-facts.pdf"
+    published_at: "2021-01-20"
+    retrieved_at: "2026-09-06"
+    license: "unknown"
+
+  - id: pmi-2021-seventh-edition-faq
+    type: official-document
+    title: "PMBOK Guide – Seventh Edition FAQs"
+    author: "Project Management Institute"
+    canonical_url: "https://www.pmi.org/-/media/pmi/documents/public/pdf/pmbok-standards/pmbok-guide-public-faqs-1-july-2021"
+    updated_at: "2021-12-01"
+    retrieved_at: "2026-09-06"
+    license: "unknown"
+
+  - id: pmi-2021-performance-domains
+    type: official-document
+    title: "Project Performance Domains"
+    author: "Project Management Institute"
+    canonical_url: "https://www.pmi.org/-/media/pmi/documents/public/pdf/pmbok-standards/pmi-project-performance-domains.pdf"
+    published_at: "2021"
+    retrieved_at: "2026-09-06"
+    license: "unknown"
+
+  - id: thiry-2014-complexity-change
+    type: white-paper
+    title: "Complexity and Change: Birds of a Feather?"
+    author: "Michel Thiry"
+    canonical_url: "https://www.pmi.org/learning/library/complexity-and-change-11127"
+    published_at: "2014-10"
+    retrieved_at: "2026-09-06"
+    license: "unknown"
+
+  - id: pmi-2025-pmbok-eighth-edition
+    type: official-documentation
+    title: "PMBOK Guide—Eighth Edition"
+    author: "Project Management Institute"
+    canonical_url: "https://www.pmi.org/standards/pmbok"
+    published_at: "2025-11"
+    updated_at: "2026-04"
+    retrieved_at: "2026-09-06"
+    license: "unknown"
+
+  - id: ipg-2021-pmbok-seventh-pdf
+    type: publisher-catalog
+    title: "A Guide to the Project Management Body of Knowledge (PMBOK Guide) – Seventh Edition and The Standard for Project Management"
+    author: "Project Management Institute"
+    canonical_url: "https://pmi.bookstore.ipgbook.com/a-guide-to-the-project-management-body-of-knowledge--pmbok---guide------seventh-edition-and-the-standard-for-project-management--english--products-9781628256673.php"
+    published_at: "2021-07"
+    retrieved_at: "2026-09-06"
+    license: "unknown"
+    notes: "PMIの販売委託先カタログ。PDF版ISBN 9781628256673を368ページと記載。媒体間でページ付けが異なることの確認に使用。"
