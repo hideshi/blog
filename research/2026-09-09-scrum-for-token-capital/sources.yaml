@@ -1,0 +1,19 @@
+version: 1
+article: _posts/2026-09-09-scrum-for-token-capital.md
+sources:
+  - id: scrum-guide-2020
+    type: web-article
+    title: "The 2020 Scrum Guide"
+    author: "Ken Schwaber and Jeff Sutherland"
+    canonical_url: "https://scrumguides.org/scrum-guide.html"
+    published_at: "2020-11"
+    retrieved_at: "2026-09-09"
+    notes: "公式英語HTMLを確認。パイロットの具体的運用、学習効果、尊厳についての主張は筆者の提案であり、ガイドの主張ではない。"
+  - id: author-x-20260908
+    type: social-post
+    title: "スクラムとAI駆動開発についての経験の共有"
+    author: "@hdsh0428"
+    canonical_url: "https://x.com/hdsh0428/status/2097300945633968276"
+    published_at: "2026-09-08"
+    retrieved_at: "2026-09-09"
+    notes: "X本文へ直接到達できず、前の会話でFxTwitter API経由の本文を確認。ユーザーとの会話で経験の趣旨を確認。直接原典の取得は未完了。"
