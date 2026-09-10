@@ -29,6 +29,7 @@ tags:
 ```
 
 - `_posts/YYYY-MM-DD-slug.md` の日付と front matter の日付を一致させる。
+- `drafts/` 下のファイル名は日付を入れず `slug.md` とする（作成日＝公開日とは限らないため）。公開時に `_posts/YYYY-MM-DD-slug.md` へ移動して公開日付を付与する。
 - 公開記事から `draft: true` を外す。
 - `image.path` は存在する 1200×630 の JPEG にする。
 - `_layouts/post.html` が画像と関連記事を出すため、本文へ同じ OGP や関連記事一覧を重複挿入しない。
@@ -40,7 +41,7 @@ tags:
 2. front matter、見出し、コードフェンス、内部リンク、画像パスを検査する。
 3. 原典を使う記事は証拠パックを検査する。
 4. OGP を作成し、実寸と容量を確認する。
-5. `drafts/` から `_posts/` へ移動した場合は、`draft: true` を外し、元の `drafts/` 下のファイルを削除する（重複・二重管理の防止）。
+5. `drafts/slug.md` から `_posts/YYYY-MM-DD-slug.md` へ移動した場合は、公開日付をファイル名と front matter に反映し、`draft: true` を外して元の `drafts/` 下のファイルを削除する（重複・二重管理の防止）。
 6. `validate_post.py` を実行する。
 7. 保存後のファイルを読み直し、差分を示す。
 
