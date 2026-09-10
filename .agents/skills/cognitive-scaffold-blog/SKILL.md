@@ -33,7 +33,7 @@ Jekyll プロジェクトサイト。公開 URL は `https://hideshi.github.io/b
 - 外部資料、固有名詞、引用、技術概念、数値、ファクトチェック: [references/source-verification.md](references/source-verification.md)
 - front matter、SEO、draft、Git、Pages: [references/publishing.md](references/publishing.md)
 - OGP の生成・合成: [references/ogp.md](references/ogp.md)
-- X 投稿文: [references/social.md](references/social.md)
+- X 投稿文、記事から切り出す発見・具体例・問い: [references/social.md](references/social.md)
 
 複数に該当すれば必要なものだけ組み合わせる。外部資料に依存する記事や、ハルシネーション検証を求められたレビューでは、`source-verification.md` を必ず先に読む。
 
