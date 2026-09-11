@@ -1,0 +1,96 @@
+version: 1
+article: _posts/2026-09-12-ddd-and-table-design.md
+sources:
+  - id: mejileben-2019-laravel-ddd
+    type: web-article
+    title: "Laravelでドメイン駆動設計(DDD)を実践し、Eloquent Model依存の設計から脱却する"
+    author: "mejileben"
+    canonical_url: "https://qiita.com/mejileben/items/302a9f502ca0801b1efb"
+    published_at: "2019-12-09"
+    updated_at: "2021-09-07"
+    retrieved_at: "2026-09-11"
+    license: "unknown"
+    notes: "Qiita 本文を直接取得して確認。テーブル設計から考えていた過去と、Repository を最後に考える手順への転換は本人の記述。"
+  - id: hombergs-2024-clean-architecture-excerpt
+    type: web-article
+    title: "多層アーキテクチャにおけるデータベース中心の設計になってしまう問題"
+    author: "ucan-lab（内容は Tom Hombergs 著・須田智之訳『手を動かしてわかるクリーンアーキテクチャ』2.1 の抜粋）"
+    canonical_url: "https://qiita.com/ucan-lab/items/fee043bf03d0c34feb25"
+    published_at: "2024-10-30"
+    retrieved_at: "2026-09-11"
+    license: "unknown"
+    notes: "Qiita 本文を直接取得。記事末尾に書籍からの抜粋である旨の明記あり。書籍自体はインプレス 2024-07-19 発売を出版社情報で確認。書籍本文は未取得。"
+  - id: akaishikiso-2025-ddd-implementation-order
+    type: web-article
+    title: "DDDの実装順序を見直したら、開発速度が向上した話"
+    author: "赤い色素（akaishikiso）"
+    canonical_url: "https://zenn.dev/akaishikiso/articles/7338391c050050"
+    published_at: "2025-08-14"
+    retrieved_at: "2026-09-11"
+    license: "unknown"
+    notes: "Zenn 本文を直接取得して確認。新卒エンジニアの実体験記事。効果の記述は本人の観察。"
+  - id: panda728z-2025-ddd-7-insights
+    type: web-article
+    title: "読み返してわかった、ドメイン駆動設計（DDD）の7つの気づき"
+    author: "panda728z"
+    canonical_url: "https://qiita.com/panda728z/items/8e188f8709763125abc5"
+    published_at: "2025-08-19"
+    updated_at: "2025-08-20"
+    retrieved_at: "2026-09-11"
+    license: "unknown"
+    notes: "Qiita 本文を直接取得して確認。「以前の私はテーブル構造とコードを同じ構造にすることを重視していた」は気づき3の記述。"
+  - id: homappiyo-2025-aggregate-boundary
+    type: web-article
+    title: "DDD の集約境界をどう設計するか 〜巨大テーブルとの向き合い方〜"
+    author: "homappiyo"
+    canonical_url: "https://zenn.dev/homappiyo/articles/article-a77fb6d7ca89848b"
+    published_at: "2025-12-27"
+    retrieved_at: "2026-09-11"
+    license: "unknown"
+    notes: "Zenn 本文を直接取得して確認。著者自身「まだ勉強中」と明記する学習整理記事。集約の決め方は著者の提案として扱う。"
+  - id: pospome-2024-why-ddd-is-hard
+    type: slide
+    title: "DDDはなぜ難しいのか / 良いコードの定義と設計能力の壁"
+    author: "pospome"
+    canonical_url: "https://speakerdeck.com/pospome/liang-ikodonoding-yi-toshe-ji-neng-li-nobi"
+    published_at: "2024-03-24"
+    retrieved_at: "2026-09-11"
+    license: "unknown"
+    notes: "Speaker Deck のテキストを直接取得して確認。Object-Oriented Conference 2024 登壇資料。"
+  - id: masaki-u-2020-add
+    type: web-article
+    title: "テーブル設計を遅らせることでユーザー体験の最大化を狙える!?米国式最新開発手法「ADD」とは。。"
+    author: "masaki_u"
+    canonical_url: "https://qiita.com/masaki_u/items/2e3cb180313408b43dfe"
+    published_at: "2020-10-23"
+    updated_at: "2020-10-26"
+    retrieved_at: "2026-09-11"
+    license: "unknown"
+    notes: "Qiita 本文を直接取得して確認。「POA vs DOA 論争の結果テーブル設計を一番初めに済ませることが一般的になった」は著者の歴史認識であり、一次資料ではない。ADD の紹介内容も著者の整理。"
+  - id: mick-2024-db-design-2nd
+    type: book
+    title: "達人に学ぶDB設計 徹底指南書 第2版"
+    author: "ミック"
+    canonical_url: "https://www.shoeisha.co.jp/book/detail/9784798186627"
+    published_at: "2024"
+    retrieved_at: "2026-09-11"
+    license: "unknown"
+    notes: "書籍本文は未取得。第1章章題「データベースを制する者はシステムを制す」は出版社目次で確認。「データベース設計を制する者はシステム開発を制す。それはシステムがデータのフォーマットに合わせて作られるからです」は O'Reilly の第2版抜粋ページで確認。「プログラム設計に先立ってまずデータ設計が優先される」は複数の読書メモ（kuuuuumiiiii, kyojinnaapyon）で一致を確認したが、書籍本文での直接確認は未完了。"
+  - id: oki-2008-doa
+    type: web-article
+    title: "信頼性の高いデータの管理・供給のためのDOA：ゼロからのデータモデリング入門（2）"
+    author: "沖冠吾（株式会社アシスト）"
+    canonical_url: "https://atmarkit.itmedia.co.jp/ait/articles/0811/20/news152_2.html"
+    published_at: "2008-11-20"
+    retrieved_at: "2026-09-11"
+    license: "unknown"
+    notes: "@IT 本文（2/3ページ）を直接取得して確認。DOA の説明は著者の整理。"
+  - id: masuda-2022-table-design-style
+    type: web-article
+    title: "増田亨さんによる「設計の考え方とやり方」勉強会 書き起こし3 「テーブル設計のスタイル」"
+    author: "アスケン（講演者: 増田亨）"
+    canonical_url: "https://tech.asken.inc/entry/2022/08/24/084632"
+    published_at: "2022-08-24"
+    retrieved_at: "2026-09-11"
+    license: "unknown"
+    notes: "asken テックブログの書き起こし本文を直接取得して確認。増田亨の発言の書き起こしであり、逐語性は書き起こし側の編集に依存する。"
