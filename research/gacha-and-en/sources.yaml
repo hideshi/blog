@@ -1,0 +1,40 @@
+version: 1
+article: _posts/2026-09-11-gacha-and-en.md
+sources:
+  - id: shiji-gaozu-benji
+    type: book
+    title: "史記 高祖本紀"
+    author: "司馬遷"
+    canonical_url: "https://ctext.org/shiji/gao-zu-ben-ji/zh"
+    published_at: "unknown"
+    retrieved_at: "2026-09-11"
+    license: "public-domain"
+    notes: "ctext.org は直接取得が 403 で拒否されたため、baojie.github.io/shiji-kb と vrrw.net の全文複写で本文を確認。三傑の言葉（洛陽南宮の宴）と亭長の記述は両複写で一致。成立は前漢（紀元前1世紀頃）とされるが確定年代は不明のため published_at は unknown。三傑の言葉には「運籌策帷帳/運籌帷帳」「為我擒/為我所禽」などの異文がある。"
+  - id: shiji-xiangyu-benji
+    type: book
+    title: "史記 項羽本紀"
+    author: "司馬遷"
+    canonical_url: "https://ctext.org/shiji/xiang-yu-ben-ji/zh"
+    published_at: "unknown"
+    retrieved_at: "2026-09-11"
+    license: "public-domain"
+    notes: "ctext.org は直接取得が 403 で拒否されたため、zh.wikisource.org・moshuyuan.com・shidianguji.com の全文複写で確認。冒頭の系譜（其季父項梁、梁父即楚將項燕）、彭城の大風（圍漢王三匝……而漢王乃得與數十騎遁去）、垓下の歌（力拔山兮氣蓋世）は複数複写で一致。"
+  - id: shiji-huaiyinhou-liezhuan
+    type: book
+    title: "史記 淮陰侯列伝"
+    author: "司馬遷"
+    canonical_url: "https://ctext.org/shiji/huai-yin-hou-lie-zhuan/zh"
+    published_at: "unknown"
+    retrieved_at: "2026-09-11"
+    license: "public-domain"
+    notes: "ctext.org の全文を直接取得して確認（數以策干項羽・羽不用、國士無雙、拜大將、印刓敝・忍不能予・婦人之仁）。zh.wikisource.org・moshuyuan.com の複写とも一致。"
+  - id: nhk-bunken-consciousness-2018
+    type: web-article
+    title: "第10回「日本人の意識」調査（2018）"
+    author: "NHK放送文化研究所"
+    canonical_url: "https://www.nhk.or.jp/bunken/research/yoron/index.html"
+    published_at: "2019-04-01"
+    retrieved_at: "2026-09-11"
+    license: "unknown"
+    notes: "『現代日本人の意識構造［第九版］』（NHK出版、2020年）。信仰している宗教がない（無宗教）とする回答が約62%に達し、教団所属や自覚的な強い信仰心を持つ層が少数派であることを示す基礎データとして参照。"
+
