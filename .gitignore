@@ -8,3 +8,6 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+
+# X / note / share copy. Not the article drafts.
+social/

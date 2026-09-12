@@ -4,6 +4,7 @@
 
 - `_posts/`: 公開記事
 - `drafts/`: 非公開下書き。Git に追加しない
+- `social/`: X・note など共有用の文案。Git に追加しない
 - `assets/images/`: 公開 OGP
 - `assets/images/alts/`: 画像生成・合成の候補。Git に追加しない
 - `research/`: 原典メタデータと主張表。Jekyll の公開対象から除外する

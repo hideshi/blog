@@ -1,0 +1,83 @@
+version: 1
+article: _posts/2026-09-12-ai-collaboration-typologies.md
+sources:
+  - id: ogoshi-2026-answerability-boundary
+    type: academic-paper
+    title: "答え責任と外部化の線引き: AI 協働における認知作業の委譲原理"
+    author: "小越 秀"
+    canonical_url: "https://doi.org/10.5281/zenodo.22065716"
+    published_at: "2026-08-23"
+    retrieved_at: "2026-09-12"
+    license: "CC BY 4.0"
+    notes: "Zenodo プレプリント。外部化の境界条件と人間による誤り検出・訂正・採否の保持を論じる。本稿の答え責任の一次定義。"
+
+  - id: blog-2026-09-06-scaffolding
+    type: blog-post
+    title: "強いAIモデルほど、足場を捨てるのではなく選び直す"
+    author: "認知の足場"
+    canonical_url: "https://hideshi.github.io/blog/2026/09/06/strong-models-still-need-scaffolding/"
+    published_at: "2026-09-06"
+    retrieved_at: "2026-09-12"
+    license: "unknown"
+    notes: "自サイト記事。「捨てる／残す」判断の先行整理。"
+
+  - id: blog-2026-09-11-wild-horse
+    type: blog-post
+    title: "「リミット来るまで本気見せろ」とじゃじゃ馬の調教"
+    author: "認知の足場"
+    canonical_url: "https://hideshi.github.io/blog/2026/09/11/run-until-limit-and-wild-horse/"
+    published_at: "2026-09-11"
+    retrieved_at: "2026-09-12"
+    license: "unknown"
+    notes: "自サイト記事。モード切替と答え責任の補完（委譲責任・信頼性責任）の先行整理。"
+
+  - id: blog-2026-09-11-harness-exhausts
+    type: blog-post
+    title: "ハーネスを作っても疲れる理由"
+    author: "認知の足場"
+    canonical_url: "https://hideshi.github.io/blog/2026/09/11/why-harness-still-exhausts/"
+    published_at: "2026-09-11"
+    retrieved_at: "2026-09-12"
+    license: "unknown"
+    notes: "自サイト記事。圧縮後に残る判断・承認負担。"
+
+  - id: blog-2026-09-04-compressed-cognition
+    type: blog-post
+    title: "コードは思考の圧縮結果である"
+    author: "認知の足場"
+    canonical_url: "https://hideshi.github.io/blog/2026/09/04/code-as-compressed-cognition/"
+    published_at: "2026-09-04"
+    retrieved_at: "2026-09-12"
+    license: "unknown"
+    notes: "自サイト記事。圧縮型／展開型のスペクトラム。"
+
+  - id: blog-2026-09-12-ddd-table
+    type: blog-post
+    title: "テーブル設計を書かないまま開発していた——DDDで変わった設計の順番と、変わらない根幹"
+    author: "認知の足場"
+    canonical_url: "https://hideshi.github.io/blog/2026/09/12/ddd-and-table-design/"
+    published_at: "2026-09-12"
+    retrieved_at: "2026-09-12"
+    license: "unknown"
+    notes: "自サイト記事。出発点と SoT 固定タイミングの分離。"
+
+  - id: bbc-2019-syed-cia-911
+    type: web-article
+    title: "9/11攻撃、CIAが白人ばかりでなければ防げた？"
+    author: "BBCニュース（マシュー・サイド氏の見解の紹介）"
+    canonical_url: "https://www.bbc.com/japanese/features-and-analysis-49660095"
+    published_at: "2019-09-11"
+    retrieved_at: "2026-09-12"
+    license: "unknown"
+    notes: "Rebel Ideas / 邦訳『多様性の科学』著者マシュー・サイドの見方をBBCが紹介。CIA職員の画一性が9/11の兆候読みを弱めた、という著者主張の二次紹介。書籍本文は未購入・未確認。FBI単独原因説としては扱わない。"
+
+  - id: rinen-2021-diversity-science-summary
+    type: web-article
+    title: "第10回／『多様性の科学――画一的で凋落する組織、複数の視点で問題を解決する組織』"
+    author: "前原政之（月刊『理念と経営』）"
+    canonical_url: "https://www.rinen-mg.co.jp/web-rinentokeiei/entry-5072.html"
+    published_at: "unknown"
+    retrieved_at: "2026-09-12"
+    license: "unknown"
+    notes: "邦訳書の紹介記事。CIAの画一性と9/11の死角についての本書の議論を要約・引用。書籍本文の直接確認は未了。補助資料。"
+
