@@ -39,7 +39,7 @@ tags:
 ## 準備手順
 
 1. 対象ファイルと現在の `git status` を確認する。
-2. front matter、見出し、コードフェンス、内部リンク、画像パスを検査する。
+2. front matter、見出し、コードフェンス、内部リンク、画像パスを検査する。title／description と本文の着地（おわりに・後半の核）が同じ話か照合する。
 3. 原典を使う記事は証拠パックを検査する。
 4. OGP を作成し、実寸と容量を確認する。
 5. `drafts/slug.md` から `_posts/YYYY-MM-DD-slug.md` へ移動した場合は、公開日付をファイル名と front matter に反映し、`draft: true` を外して元の `drafts/` 下のファイルを削除する（重複・二重管理の防止）。
