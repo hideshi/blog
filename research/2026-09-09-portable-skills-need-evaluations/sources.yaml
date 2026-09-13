@@ -1,0 +1,31 @@
+version: 1
+article: drafts/2026-09-09-portable-skills-need-evaluations.md
+sources:
+  - id: agent-skills-spec
+    type: documentation
+    title: "Specification"
+    author: "Agent Skills"
+    canonical_url: "https://agentskills.io/specification"
+    retrieved_at: "2026-09-09"
+    notes: "Directory structure、compatibility、allowed-toolsを確認。公開・更新日は未確認。"
+  - id: anthropic-skill-practices
+    type: documentation
+    title: "Skill authoring best practices"
+    author: "Anthropic"
+    canonical_url: "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices"
+    retrieved_at: "2026-09-09"
+    notes: "Test with all models you plan to useと前後を確認。Claudeモデル群向けの助言。公開・更新日は未確認。"
+  - id: promptfoo-custom-provider
+    type: documentation
+    title: "Javascript Provider"
+    author: "Promptfoo"
+    canonical_url: "https://www.promptfoo.dev/docs/providers/custom-api/"
+    retrieved_at: "2026-09-09"
+    notes: "導入とProvider Interfaceを確認。実環境への接続実験は未実施。公開・更新日は未確認。"
+  - id: deepeval-task-completion
+    type: documentation
+    title: "Task Completion"
+    author: "DeepEval"
+    canonical_url: "https://deepeval.com/docs/metrics-task-completion"
+    retrieved_at: "2026-09-09"
+    notes: "Usage、How Is It Calculated、FAQsを確認。LLM採点とトレース要件のみ紹介。公開・更新日は未確認。"

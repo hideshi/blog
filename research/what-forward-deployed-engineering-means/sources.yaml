@@ -1,0 +1,64 @@
+version: 1
+article: drafts/what-forward-deployed-engineering-means.md
+sources:
+  - id: palantir-2019-dev-delta
+    type: interview
+    title: "Dev versus Delta: Demystifying engineering roles at Palantir"
+    author: "Palantir; interviews conducted by Dr. Bruno Pontes Soares Rocha"
+    canonical_url: https://blog.palantir.com/dev-versus-delta-demystifying-engineering-roles-at-palantir-ad44c2a6e87
+    published_at: "2019-04-08"
+    retrieved_at: "2026-09-12"
+    notes: "原典本文を確認。現場での個別実装とコア製品への貢献の両方、製品チームとの調整を記述。コンサル一般に対する記事中の比較は一般化して採用しない。"
+  - id: qureshi-2024-reflections
+    type: web-article
+    title: "Reflections on Palantir"
+    author: "Nabeel S. Qureshi"
+    canonical_url: https://nabeelqu.co/reflections-on-palantir
+    published_at: "2024-10-15"
+    retrieved_at: "2026-09-12"
+    notes: "本人の回顧。2. Forward deployedを確認。正式な会社見解ではなく、筆者は株式保有を開示。製造能力増加などの因果・数値は本文に採用しない。"
+  - id: mabrey-2024-fde
+    type: web-article
+    title: "Sorry, that isn't an FDE"
+    author: "Ted Mabrey"
+    canonical_url: https://tedmabrey.substack.com/p/sorry-that-isnt-an-fde
+    published_at: "2024-09-20"
+    retrieved_at: "2026-09-12"
+    notes: "Palantir当事者の規範的・批判的な論考として扱う。著者による他社批判や自社の唯一性を客観的事実にしない。"
+  - id: mccardel-fde-culture
+    type: web-article
+    title: "Understanding Forward Deployed Engineering"
+    author: "Barry McCardel"
+    canonical_url: https://www.barry.ooo/posts/fde-culture
+    retrieved_at: "2026-09-12"
+    notes: "著者はFDEそのものではなく、約5年のDeployment Strategist経験を明記。ページ上部はFebruary 10, 2026、直後にOriginally posted November 2024, updated March 2026と表示され日付が整合しないため、確定的な公開・更新日を登録しない。"
+  - id: akshayk-2026-fde
+    type: community-post
+    title: "Who are Palantir FDEs? — reply #4"
+    author: "akshayk"
+    canonical_url: https://community.palantir.com/t/who-are-palantir-fdes/6847/4
+    published_at: "2026-07-15"
+    retrieved_at: "2026-09-12"
+    notes: "公式コミュニティ上の社員個人の投稿。所属・14年のFDE経験は本人の自己記述。氏名や役職を推測で補わない。顧客企業内部のFDEチームも評価しており、自社外販製品だけに限定する定義は避ける。"
+  - id: anthropic-fde-job
+    type: job-posting
+    title: "Forward Deployed Engineer"
+    author: "Anthropic"
+    canonical_url: https://job-boards.greenhouse.io/anthropic/jobs/5302966008
+    retrieved_at: "2026-09-12"
+    notes: "米国3都市の募集。本文を確認。公開・更新日は不明。役割比較にのみ使用し、全FDE共通の経験年数・報酬要件とはしない。"
+  - id: palantir-fdse-new-grad
+    type: job-posting
+    title: "Forward Deployed Software Engineer, New Grad - Commercial"
+    author: "Palantir Technologies"
+    canonical_url: https://jobs.lever.co/palantir/2e6b0ac8-83e9-4be5-a3aa-cf319f751728
+    retrieved_at: "2026-09-12"
+    notes: "New Yorkの新卒募集原典。工学系学位、プログラミング能力、卒業時期を要求。未経験でも技術基盤不要という意味ではない。公開・更新日は不明。"
+  - id: lenny-2025-qureshi
+    type: podcast-page
+    title: "How Palantir built the ultimate founder factory | Nabeel S. Qureshi (founder, writer, ex-Palantir)"
+    author: "Lenny Rachitsky; guest Nabeel S. Qureshi"
+    canonical_url: https://www.lennysnewsletter.com/p/inside-palantir-nabeel-qureshi
+    published_at: "2025-05-11"
+    retrieved_at: "2026-09-12"
+    notes: "公開ページの紹介・要約・章立てを確認。音声全編および逐語録は未確認。記事末尾の視聴案内だけに使用し、発言の直接引用はしない。"
