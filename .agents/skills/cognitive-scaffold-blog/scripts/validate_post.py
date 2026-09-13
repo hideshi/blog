@@ -15,6 +15,17 @@ from PIL import Image
 
 FRONT_MATTER = re.compile(r"\A---\r?\n(.*?)\r?\n---(?:\r?\n|\Z)", re.DOTALL)
 POST_NAME = re.compile(r"(?P<date>\d{4}-\d{2}-\d{2})-(?P<slug>[a-z0-9][a-z0-9-]*)\.md\Z")
+RELATIVE_URL_LINK = re.compile(
+    r'\{\{\s*"(?P<path>/\d{4}/\d{2}/\d{2}/[a-z0-9][a-z0-9-]*/)"\s*\|\s*relative_url\s*\}\}'
+)
+ABS_BLOG_LINK = re.compile(
+    r"https://hideshi\.github\.io/blog(?P<path>/(?:20\d{2}/\d{2}/\d{2}/[a-z0-9][a-z0-9-]*)/?)"
+)
+ABS_MISSING_BLOG = re.compile(
+    r"https://hideshi\.github\.io/(?P<path>20\d{2}/\d{2}/\d{2}/[^)\s\"']+)"
+)
+ROOT_MD_LINK = re.compile(r"\]\(/(?P<path>20\d{2}/\d{2}/\d{2}/[^)]+)\)")
+ROOT_HREF = re.compile(r'href="/(?P<path>20\d{2}/\d{2}/\d{2}/[^"]+)"')
 
 
 def find_repo_root(path: Path) -> Path:
@@ -28,6 +39,30 @@ def date_text(value: object) -> str:
     if isinstance(value, (date, datetime)):
         return value.strftime("%Y-%m-%d")
     return str(value or "")[:10]
+
+
+def index_posts(posts_dir: Path) -> tuple[set[str], set[str]]:
+    slugs: set[str] = set()
+    permalinks: set[str] = set()
+    if not posts_dir.is_dir():
+        return slugs, permalinks
+    for post in posts_dir.glob("*.md"):
+        name_match = POST_NAME.fullmatch(post.name)
+        if not name_match:
+            continue
+        slug = name_match.group("slug")
+        slugs.add(slug)
+        y, mo, d = name_match.group("date").split("-")
+        permalinks.add(f"/{y}/{mo}/{d}/{slug}/")
+    return slugs, permalinks
+
+
+def normalize_permalink(path: str) -> str:
+    if not path.startswith("/"):
+        path = "/" + path
+    if not path.endswith("/"):
+        path += "/"
+    return path
 
 
 def validate(path: Path) -> tuple[list[str], list[str]]:
@@ -64,6 +99,7 @@ def validate(path: Path) -> tuple[list[str], list[str]]:
     repo_root = find_repo_root(path.resolve())
     is_post = path.resolve().parent == repo_root / "_posts"
     is_draft = path.resolve().parent == repo_root / "drafts"
+    existing_slugs, existing_permalinks = index_posts(repo_root / "_posts")
 
     if is_post:
         name_match = POST_NAME.fullmatch(path.name)
@@ -113,16 +149,79 @@ def validate(path: Path) -> tuple[list[str], list[str]]:
     if body.count("```") % 2:
         errors.append("コードフェンス ``` の数が奇数です")
 
+    # Internal link / baseurl gates.
+    # On this site (baseurl=/blog), {% post_url %} has rendered without /blog.
+    if "{% post_url" in text or "{%- post_url" in text:
+        errors.append(
+            "{% post_url %} は使わないでください（/blog が欠ける）。"
+            '{{ "/YYYY/MM/DD/slug/" | relative_url }} を使う'
+        )
+
+    for m in ABS_MISSING_BLOG.finditer(text):
+        errors.append(f"絶対URLに /blog がありません: https://hideshi.github.io/{m.group('path')}")
+
+    for m in ROOT_MD_LINK.finditer(body):
+        errors.append(
+            f"ルート相対リンクに baseurl がありません（relative_url を使う）: /{m.group('path')}"
+        )
+    for m in ROOT_HREF.finditer(body):
+        errors.append(f"href が /blog なしのルート相対です: /{m.group('path')}")
+
+    if existing_permalinks:
+        for m in RELATIVE_URL_LINK.finditer(text):
+            permalink = normalize_permalink(m.group("path"))
+            if permalink not in existing_permalinks:
+                errors.append(f"内部リンク先の記事がありません: {permalink}")
+
+        for m in ABS_BLOG_LINK.finditer(text):
+            permalink = normalize_permalink(m.group("path"))
+            if permalink not in existing_permalinks:
+                errors.append(f"絶対URLの記事がありません: /blog{permalink}")
+
+    related = metadata.get("related")
+    if related is not None:
+        if not isinstance(related, list):
+            errors.append("related は YAML のリストにしてください")
+        else:
+            for item in related:
+                if not isinstance(item, str) or not item:
+                    errors.append("related の各要素は slug 文字列にしてください")
+                elif existing_slugs and item not in existing_slugs:
+                    errors.append(f"related の slug がありません: {item}")
+
     return errors, warnings
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("files", nargs="+", type=Path, help="検査する Markdown 記事")
+    parser.add_argument(
+        "files",
+        nargs="*",
+        type=Path,
+        help="検査する Markdown 記事（省略時は _posts 全件）",
+    )
+    parser.add_argument(
+        "--all-posts",
+        action="store_true",
+        help="_posts 配下をすべて検査する",
+    )
     args = parser.parse_args()
 
+    files = list(args.files)
+    if args.all_posts or not files:
+        # Default to all posts when no files given, so the gate is easy to run.
+        if not files:
+            repo = Path.cwd()
+            if not (repo / "_config.yml").is_file():
+                print("ERROR: リポジトリルートで実行するか、ファイルを指定してください", file=sys.stderr)
+                return 2
+            files = sorted((repo / "_posts").glob("*.md"))
+            if not files:
+                print("ERROR: _posts に記事がありません", file=sys.stderr)
+                return 2
+
     failed = False
-    for path in args.files:
+    for path in files:
         errors, warnings = validate(path)
         print(f"[{path}]")
         for message in errors:

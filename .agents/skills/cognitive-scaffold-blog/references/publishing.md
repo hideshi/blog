@@ -76,6 +76,24 @@ python3 .agents/skills/cognitive-scaffold-blog/scripts/validate_post.py _posts/Y
 
 Ruby/Jekyll を実行できる環境ならビルドも確認する。実行できなければ、未実施であることを報告する。
 
+
+## 内部リンク（baseurl）
+
+このサイトは `baseurl: /blog` なので、記事間リンクは必ず `/blog` 付きになる書き方にする。
+
+- **使う**: `{{ "/YYYY/MM/DD/slug/" | relative_url }}`、または `https://hideshi.github.io/blog/YYYY/MM/DD/slug/`
+- **使わない**: `{% post_url YYYY-MM-DD-slug %}`（GitHub Pages 上で `/blog` が欠ける事例あり）、`https://hideshi.github.io/YYYY/...`、`]/YYYY/...` のルート相対
+
+公開前ゲート:
+
+```bash
+python3 .agents/skills/cognitive-scaffold-blog/scripts/validate_post.py _posts/YYYY-MM-DD-slug.md
+# または全件
+python3 .agents/skills/cognitive-scaffold-blog/scripts/validate_post.py --all-posts
+```
+
+`validate_post.py` は `{% post_url %}`、`/blog` 欠落の絶対URL、存在しない permalink / related slug を ERROR にする。
+
 ## SEO と Pages
 
 - `jekyll-seo-tag`、`jekyll-feed`、`jekyll-sitemap` を外さない。
