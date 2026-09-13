@@ -3,7 +3,9 @@
 ## ディレクトリと権限
 
 - `_posts/`: 公開記事
-- `drafts/`: 非公開下書き。Git に追加しない
+- `drafts/`: 非公開の記事下書き（本文候補）だけ。Git に追加しない
+- `reviews/`: 外部モデル等によるレビューメモ。Git に追加しない
+- `scratch/`: `.bak` やツールの raw 出力など一時物。Git に追加しない
 - `social/`: X・note など共有用の文案。Git に追加しない
 - `assets/images/`: 公開 OGP
 - `assets/images/alts/`: 画像生成・合成の候補。Git に追加しない

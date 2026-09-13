@@ -4,6 +4,12 @@ assets/images/alts/
 # Local copies of source material may not be redistributable.
 research/**/snapshots/
 drafts/
+
+# External model reviews of drafts / repos (not publishable posts)
+reviews/
+
+# Temporary backups and raw tool dumps
+scratch/
 _site/
 .sass-cache/
 .jekyll-cache/
