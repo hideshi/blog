@@ -17,3 +17,6 @@ _site/
 
 # X / note / share copy. Not the article drafts.
 social/
+
+__pycache__/
+*.py[cod]
