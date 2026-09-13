@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% capture ai_core_prompt %}次の記事の全文ではなく核だけを整理してください。主張、本稿での用語の定義、読者が判断できる条件に絞り、簡潔に書いてください。出典: {{ page.url | absolute_url }}{% endcapture %}
 <article>
   <h1>{{ page.title }}</h1>
   <p>
@@ -18,6 +19,9 @@ layout: default
       <img src="{{ hero_src | relative_url }}" alt="{{ hero_alt }}" width="1200" height="630">
     </p>
   {% endif %}
+  <p class="ai-core-summary">
+    <a href="https://www.google.com/search?udm=50&amp;aep=11&amp;q={{ ai_core_prompt | url_encode }}" target="_blank" rel="noopener noreferrer">Google AIで要約</a>
+  </p>
   {{ content }}
 </article>
 {% if page.related and page.related.size > 0 %}

@@ -253,3 +253,18 @@ article img {
     color: #222;
   }
 }
+
+.ai-core-summary {
+  margin: 0.25rem 0 1.5rem;
+  font-size: 0.95rem;
+}
+
+.ai-core-summary a {
+  text-decoration: none;
+  border-bottom: 1px solid #5a7a8a;
+}
+
+.ai-core-summary a:hover,
+.ai-core-summary a:focus {
+  border-bottom-color: #8ec4e0;
+}
