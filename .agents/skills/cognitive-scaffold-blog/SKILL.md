@@ -34,6 +34,7 @@ Jekyll プロジェクトサイト。公開 URL は `https://hideshi.github.io/b
 - front matter、SEO、draft、Git、Pages: [references/publishing.md](references/publishing.md)
 - OGP の生成・合成: [references/ogp.md](references/ogp.md)
 - X 投稿文、記事から切り出す発見・具体例・問い: [references/social.md](references/social.md)
+- Answer Engine / AI 要約・引用されやすさの点検・改稿: 共有スキル `aieo-editor`（入口信号と本文の核抽出性を分け、要約ボタンは AIEO 本体ではない）
 
 複数に該当すれば必要なものだけ組み合わせる。外部資料に依存する記事や、ハルシネーション検証を求められたレビューでは、`source-verification.md` を必ず先に読む。
 
