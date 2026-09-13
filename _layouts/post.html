@@ -20,7 +20,7 @@ layout: default
     </p>
   {% endif %}
   <p class="ai-core-summary">
-    <a href="https://www.google.com/search?udm=50&amp;aep=11&amp;q={{ ai_core_prompt | url_encode }}" target="_blank" rel="noopener noreferrer">Google AIで要約</a>
+    <a class="ai-core-summary-button" href="https://chatgpt.com/?q={{ ai_core_prompt | url_encode }}" target="_blank" rel="noopener noreferrer">ChatGPTで要約</a>
   </p>
   {{ content }}
 </article>
