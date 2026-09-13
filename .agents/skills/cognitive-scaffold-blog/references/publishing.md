@@ -13,7 +13,7 @@
 
 Git remote は `git@github-personal:hideshi/blog.git`。このリポジトリの local `user.email` は `hideshi.ogoshi@gmail.com` とし、会社メールを使わない。`git add`、commit、push は、それぞれユーザーが明示した場合だけ行う。
 
-commit メッセージは日本語（全リポ共通。共有スキル `japanese-commit-messages`）。
+commit メッセージは日本語・複数行可。1行目に要約、本文で実施内容を具体的に書く（全リポ共通。共有スキル `japanese-commit-messages`）。
 
 ## front matter
 
