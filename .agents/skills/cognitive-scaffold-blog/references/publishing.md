@@ -94,6 +94,10 @@ python3 .agents/skills/cognitive-scaffold-blog/scripts/validate_post.py --all-po
 
 `validate_post.py` は `{% post_url %}`、`/blog` 欠落の絶対URL、存在しない permalink / related slug を ERROR にする。
 
+## Pages の出し方
+
+GitHub Pages は **Actions のみ**（`build_type: workflow`）。`.github/workflows/pages.yml`（Deploy GitHub Pages）がビルドとデプロイする。legacy の branch 直接ビルドは使わない（二重デプロイでキューが詰まりやすいため）。
+
 ## SEO と Pages
 
 - `jekyll-seo-tag`、`jekyll-feed`、`jekyll-sitemap` を外さない。
