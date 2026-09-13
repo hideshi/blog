@@ -17,6 +17,12 @@ tags:
   - Agent Skills
   - コード検索
   - ナレッジグラフ
+related:
+  - why-harness-still-exhausts
+  - run-until-limit-and-wild-horse
+  - why-primary-sources-are-not-enough-for-llms
+  - code-as-compressed-cognition
+  - ai-collaboration-typologies
 ---
 
 高性能なAIコーディングモデルを導入すると、これまで用意してきたルールや手順が急に古く見える。

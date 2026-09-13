@@ -14,6 +14,10 @@ tags:
   - Go
   - 答え責任
   - 認知スキャフォールディング
+related:
+  - code-as-compressed-cognition
+  - reading-is-what-remains
+  - what-the-amplifier-amplifies
 ---
 
 AIでコードを生成し、実装の細部を一行ずつ追わなくても開発を前へ進められる場面が増えた。そうであれば、プログラミング言語へのこだわりは薄れていくのだろうか。

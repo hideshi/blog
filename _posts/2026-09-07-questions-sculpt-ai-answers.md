@@ -14,6 +14,11 @@ tags:
   - 哲学
   - プラトン
   - 思考
+related:
+  - what-the-amplifier-amplifies
+  - reading-is-what-remains
+  - why-primary-sources-are-not-enough-for-llms
+  - gacha-and-en
 ---
 
 AIを使っていると、不思議に感じることがある。

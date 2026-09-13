@@ -14,6 +14,11 @@ tags:
   - 認知スキャフォールディング
   - 外部化
   - ドキュメント
+related:
+  - what-the-amplifier-amplifies
+  - explain-before-assigning-design
+  - reading-is-what-remains
+  - why-harness-still-exhausts
 ---
 
 ドキュメントは、機械が追いやすい一つの形式に揃えるべきだ、という話をよく聞く。見出しと箇条書きがテキストのまま残り、差分が取れ、生成AIにも渡しやすい。表計算やワープロで見た目を組むと、中身の更新よりレイアウトに時間が溶け、残業が増える。だから作業の形式を揃えたい、という願いは、現場としては通りやすい。

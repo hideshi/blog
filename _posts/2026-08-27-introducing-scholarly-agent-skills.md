@@ -15,6 +15,10 @@ tags:
   - オープンソース
   - 認知スキャフォールディング
   - 答え責任
+related:
+  - why-primary-sources-are-not-enough-for-llms
+  - elyza-tasks-feature-strengths
+  - reading-is-what-remains
 ---
 
 AIを使えば、論文らしい文章を短時間で生成できる。

@@ -14,6 +14,11 @@ tags:
   - 認知スキャフォールディング
   - 外部化
   - 日本語
+related:
+  - what-the-amplifier-amplifies
+  - document-format-and-who-can-answer
+  - ai-era-programming-language-choice
+  - code-as-compressed-cognition
 ---
 
 AIを使うことは、日本人がPCやスマホの普及によって、読みさえできれば何とかなる、という変化に似ている。

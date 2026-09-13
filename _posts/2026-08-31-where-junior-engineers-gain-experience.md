@@ -14,6 +14,11 @@ tags:
   - ソフトウェアテスト
   - 人材育成
   - 答え責任
+related:
+  - explain-before-assigning-design
+  - scrum-for-token-capital
+  - why-harness-still-exhausts
+  - document-format-and-who-can-answer
 ---
 
 生成AIによって、スキルの低いエンジニアは仕事を失うのだろうか。仕事を失わないとしても、悪い条件で働くことになるのだろうか。

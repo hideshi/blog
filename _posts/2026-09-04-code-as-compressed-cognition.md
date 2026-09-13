@@ -16,6 +16,12 @@ tags:
   - 答え責任
   - チーム開発
   - 知識管理
+related:
+  - ddd-and-table-design
+  - strong-models-still-need-scaffolding
+  - reading-is-what-remains
+  - what-the-amplifier-amplifies
+  - ai-collaboration-typologies
 ---
 
 チーム開発をしていると、不思議な現象に出くわす。

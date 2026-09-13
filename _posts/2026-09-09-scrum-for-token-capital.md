@@ -14,6 +14,11 @@ tags:
   - トークン資本
   - 組織学習
   - ハーネス
+related:
+  - why-harness-still-exhausts
+  - parallel-ai-and-human-decisions
+  - where-junior-engineers-gain-experience
+  - strong-models-still-need-scaffolding
 ---
 
 AIと開発するようになって、以前のスクラムの進め方が、自分の仕事の速度に合わなくなったと感じるようになった。課題はその場でAIに相談し、繰り返す失敗があれば、AIへの指示や実行の仕組みを修正する。個人で完結する仕事が増えるにつれて、チームで調整する必要のあることも減った。

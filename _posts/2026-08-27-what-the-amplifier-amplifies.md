@@ -13,6 +13,11 @@ tags:
   - 答え責任
   - 認知スキャフォールディング
   - 外部化
+related:
+  - reading-is-what-remains
+  - document-format-and-who-can-answer
+  - explain-before-assigning-design
+  - questions-sculpt-ai-answers
 ---
 
 AIは増幅器である、という言葉を、能力が増える話として聞くことが多い。手が届く範囲が広がり、一人で見られる量が増え、下書きや試作の速度が上がる。その用法は、すでに定着しているように見える。

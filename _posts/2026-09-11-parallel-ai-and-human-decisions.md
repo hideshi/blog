@@ -13,6 +13,11 @@ image:
   width: 1200
   height: 630
   alt: 3つの開発案件から矢印と疑問符が伸び、一人の人間へ質問と判断が集中してボトルネックになっている様子を表す平面図
+related:
+  - why-harness-still-exhausts
+  - run-until-limit-and-wild-horse
+  - scrum-for-token-capital
+  - ai-collaboration-typologies
 ---
 
 AIに作業を任せた。実装が進んでいる間に別の案件にも着手できる。ところが、複数のAIから設計についての質問が届き始めると、今度は自分が答え続けることになる。

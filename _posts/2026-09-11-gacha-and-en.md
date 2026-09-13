@@ -12,6 +12,10 @@ tags:
   - キャリア
   - 思考法
   - AI
+related:
+  - questions-sculpt-ai-answers
+  - what-the-amplifier-amplifies
+  - reading-is-what-remains
 ---
 
 多くの人は、生活のためにも関心のある仕事のためにも、かなりの力を注いできた。それでも途中で折れていく人は少なくない。一方で、たまたま条件が揃ったごく少数だけが、最初から特別だったかのように「偉人」として語られる。

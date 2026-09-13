@@ -16,6 +16,11 @@ tags:
   - AI駆動開発
   - 検証
   - 答え責任
+related:
+  - introducing-scholarly-agent-skills
+  - elyza-tasks-feature-strengths
+  - strong-models-still-need-scaffolding
+  - questions-sculpt-ai-answers
 ---
 
 実在するOpenAIの公式ページを示したのに、LLMが「そのモデルは存在しない」と答える。もう一度確認を求めると「公式発表を確認した」と認める。しかし、少し会話を進めると、また「先ほどの確認はハルシネーションだった」と否定する。

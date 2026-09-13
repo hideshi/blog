@@ -14,6 +14,11 @@ tags:
   - データベース設計
   - ソフトウェア設計
   - AI駆動開発
+related:
+  - code-as-compressed-cognition
+  - ai-collaboration-typologies
+  - explain-before-assigning-design
+  - strong-models-still-need-scaffolding
 ---
 
 ドメイン駆動設計（DDD）で開発を進めていたある時、テーブル設計書を一度も作っていないことに気づいた。少し前まで、テーブル設計はシステム開発で最重要の設計の一つだと考えていたのに、である。

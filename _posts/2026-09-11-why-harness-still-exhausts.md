@@ -14,6 +14,12 @@ image:
   width: 1200
   height: 630
   alt: AIから吐き出される膨大な仕様ドキュメントやチェックリスト、歯車のハーネスの濁流に頭を抱えて疲弊するエンジニアの図
+related:
+  - strong-models-still-need-scaffolding
+  - run-until-limit-and-wild-horse
+  - parallel-ai-and-human-decisions
+  - scrum-for-token-capital
+  - document-format-and-who-can-answer
 ---
 
 AIエージェントによる開発を円滑にするため、プロンプトを整え、Skill（スキル）を定義し、ガードレールや自動テストなどの「ハーネス」を構築する試みが広がっている。

@@ -13,6 +13,11 @@ tags:
   - 答え責任
   - 認知スキャフォールディング
   - 外部化
+related:
+  - where-junior-engineers-gain-experience
+  - document-format-and-who-can-answer
+  - what-the-amplifier-amplifies
+  - ddd-and-table-design
 ---
 
 AIでコードがすぐ出るようになると、設計らしい案もすぐ出てくる。そうであれば、ジュニアにも早い段階から設計を任せてよい時代だ、と読みたくなる。

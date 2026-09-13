@@ -14,6 +14,12 @@ image:
   width: 1200
   height: 630
   alt: 炭色の平面ポスター調。左にタイトル、右に形も色も異なり隣接は別色のブロックが一つの塊に組み合う図
+related:
+  - strong-models-still-need-scaffolding
+  - run-until-limit-and-wild-horse
+  - why-harness-still-exhausts
+  - code-as-compressed-cognition
+  - ddd-and-table-design
 ---
 
 レビューの場で、一人がAIで作った動く画面やたたき台を見せた。もう一人が「どの条件を満たせば完了なのか。判断の根拠はどこに残したのか」と尋ねると、答えはなかった。前者には当たりを見つけた成果、後者には本番や提出に載せられない試作に見える。その仕事が試作なのか本番候補なのかが共有されていなければ、同じ道具を使っても「完成」の意味がずれる。ソフトウェアのスプリントレビューでも、資料やデザインの共有でも、同じずれは起きる。

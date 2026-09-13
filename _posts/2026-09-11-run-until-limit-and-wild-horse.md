@@ -16,6 +16,12 @@ tags:
   - ハーネス
   - GPT-6 Astra
   - エージェント設計
+related:
+  - why-harness-still-exhausts
+  - strong-models-still-need-scaffolding
+  - parallel-ai-and-human-decisions
+  - what-the-amplifier-amplifies
+  - ai-collaboration-typologies
 ---
 
 GPT-6 Astraのような高度な推論と自律的なツール実行能力を持つフロンティアモデルが登場したことで、開発現場のプロンプトに一つの極端なアプローチが見られるようになった。
